@@ -8,16 +8,10 @@ public class Discount {
   }
 
   int discount(int inputVal, int quantity) {
-    if (inputVal > 50) {
+    if (inputVal > 49) {
       inputVal -= 2;
     }
     return inputVal * quantity;
-  }
-
-  private class Order {
-    double basePrice() {
-      return 0;
-    }
   }
 
 }
