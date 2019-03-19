@@ -13,7 +13,9 @@ public class Banner {
   }
 
   String renderBanner() {
-    if (platform.toUpperCase().contains("MAC") && browser.toUpperCase().contains("IE") && wasInitialized() && resize > 0 ) {
+    if (platform.toUpperCase().contains("MAC")
+        && browser.toUpperCase().contains("IE")
+        && wasInitialized() && resize > 0 ) {
       return "Rendering";
     }
     return "";
