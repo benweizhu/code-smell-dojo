@@ -6,6 +6,12 @@ public class PayAmount {
   private boolean isSeparated;
   private boolean isRetired;
 
+  public PayAmount(boolean isDead, boolean isSeparated, boolean isRetired) {
+    this.isDead = isDead;
+    this.isSeparated = isSeparated;
+    this.isRetired = isRetired;
+  }
+
   public double getPayAmount() {
     double result;
     if (isDead){
@@ -28,15 +34,15 @@ public class PayAmount {
   }
 
   private double normalPayAmount() {
-    return 0;
+    return 100;
   }
 
   private double retiredAmount() {
-    return 0;
+    return 30;
   }
 
   private double separatedAmount() {
-    return 0;
+    return 10;
   }
 
   private double deadAmount() {
