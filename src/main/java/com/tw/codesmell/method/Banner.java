@@ -12,13 +12,14 @@ public class Banner {
     this.resize = resize;
   }
 
-  void renderBanner() {
+  String renderBanner() {
     if (platform.toUpperCase().contains("MAC") && browser.toUpperCase().contains("IE") && wasInitialized() && resize > 0 ) {
-      System.out.println("Rendering");
+      return "Rendering";
     }
+    return "";
   }
 
   private boolean wasInitialized() {
-    return false;
+    return true;
   }
 }
